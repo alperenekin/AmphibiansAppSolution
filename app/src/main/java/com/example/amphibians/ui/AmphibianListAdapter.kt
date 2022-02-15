@@ -65,6 +65,7 @@ class AmphibianListAdapter(val clickListener: AmphibianListener) :
     }
 }
 
+// Unit type is what you return from a function that doesn't return anything of interest.
 class AmphibianListener(val clickListener: (amphibian: Amphibian) -> Unit) {
     fun onClick(amphibian: Amphibian) = clickListener(amphibian)
 }
